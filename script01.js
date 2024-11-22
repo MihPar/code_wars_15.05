@@ -14,3 +14,13 @@ function reverseWords(str) {
 	
   }
   console.log(reverseWords('The quick brown fox jumps over the lazy dog.'))
+
+  var capitals = function (word) {
+	let newArr = []
+ word.split('').map(function(item, index, array) {
+   if(item === item.toUpperCase()) {
+	 newArr.push(index)
+   } 
+ })
+ return newArr
+};
