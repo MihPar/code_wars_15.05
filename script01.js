@@ -24,3 +24,7 @@ function reverseWords(str) {
  })
  return newArr
 };
+
+function formatPoem(poem) {
+	return poem.split('. ').join('.\n')
+}
