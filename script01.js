@@ -28,3 +28,21 @@ function reverseWords(str) {
 function formatPoem(poem) {
 	return poem.split('. ').join('.\n')
 }
+
+
+function sumStr(a,b) {
+	// return a === "" && b === "" ? 0 : (Number(a) + Number(b)).toString()
+	if(a === "" && b === "") {
+	  a = 0
+	  b = 0
+	  let result = Number(a) + Number(b)
+	  return result.toString()
+	} else {
+	  let result = Number(a) + Number(b)
+	  return result.toString()
+	  
+	}
+  }
+  console.log(sumStr("1", ""))
+  
+  
