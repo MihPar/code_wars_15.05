@@ -45,4 +45,25 @@ function sumStr(a,b) {
   }
   console.log(sumStr("1", ""))
   
+  function bucketOf(str) {
+	const newStr = str.toLowerCase()
+	const arrWater = ['water', 'wet', 'wash']
+	const arrSlime = ["i don't know", 'slime']
+  
+	let saidWater = arrWater.some(word => newStr.includes(word))
+	let saidSlime = arrSlime.some(word => newStr.includes(word))
+  
+	if(saidWater && saidSlime) return 'sludge'
+	if(saidWater) return "water"
+	if(saidSlime) return 'slime'
+	
+	return 'air'
+  }
+  
+  
+  
+  // console.log(bucketOf("What is that, WATER?!?"))
+  // console.log(bucketOf("I don't know if I'm doing this right."))
+  console.log(bucketOf("water, I don't know"))
+  
   
