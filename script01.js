@@ -70,7 +70,14 @@ function sumStr(a,b) {
 
   function bucketOf(str) {
 	const newStr = str.toLowerCase()
-   if(newStr.includes("water") && newStr.includes("slime")) {
+   if(newStr.includes(
+	"i don't know") && newStr.includes("water") 
+	|| newStr.includes("slime") && newStr.includes("water") 
+	|| newStr.includes("i don't know") && newStr.includes("wet") 
+	|| newStr.includes("slime") && newStr.includes("wet")
+	|| newStr.includes("i don't know") && newStr.includes("wash")
+	|| newStr.includes("slime") && newStr.includes("wash")
+) {
 	 return 'sludge'
    } 
    if(newStr.includes("i don't know") || newStr.includes('slime')) {
@@ -84,3 +91,15 @@ function sumStr(a,b) {
    }
  }
   
+
+ function trickyDoubles(n){
+	const str = n.toString()
+	   if(str.length % 2 === 0) {
+		   let firstNumber = str.slice(0, str.length/2)
+		   let secondNumber = str.slice(str.length/2)
+		   if(firstNumber === secondNumber) {
+			   return n
+		   }
+	   }
+	   return n * 2
+   }
