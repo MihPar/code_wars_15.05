@@ -103,3 +103,12 @@ function sumStr(a,b) {
 	   }
 	   return n * 2
    }
+
+   function sharePrice(invested, changes) {
+	const finalValue = changes.reduce(
+	  (acc, change) => acc * (1 + change / 100),
+	  invested
+	);
+  
+	return finalValue.toFixed(2);
+  }
