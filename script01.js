@@ -66,4 +66,21 @@ function sumStr(a,b) {
   // console.log(bucketOf("I don't know if I'm doing this right."))
   console.log(bucketOf("water, I don't know"))
   
+
+
+  function bucketOf(str) {
+	const newStr = str.toLowerCase()
+   if(newStr.includes("water") && newStr.includes("slime")) {
+	 return 'sludge'
+   } 
+   if(newStr.includes("i don't know") || newStr.includes('slime')) {
+	 return 'slime'
+   } 
+   else if(newStr.includes('water') || newStr.includes('wet') || newStr.includes('wash')) {
+	 return 'water'
+   } 
+	 else {
+	 return 'air'
+   }
+ }
   
